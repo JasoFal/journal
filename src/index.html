@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Journal</title>
 </head>
+
 <body>
   <h1>Journal</h1>
-  <form id="entry-input">
-    <label for="title">Title</label>
-    <input type="text" name="title" id="title">
-    <label for="body">Journal Entry</label>
-    <textarea id="body" name="body">
-
-    </textarea>
-  </form>
+  <div id="form-zone">
+    <form id="entry-input">
+      <label for="title">Title</label>
+      <input type="text" name="title" id="title">
+      <label for="body">Journal Entry</label>
+      <textarea id="body" name="body" rows="4" placeholder="Enter main entry!"></textarea>
+      <button type="submit" id="save-entry">Save Entry</button>
+    </form>
+  </div>
+  <div id="entry-main-div" class="hidden">
+    <div id="entry-info">
+      <p id="entry-teaser"></p>
+      <p id="total-word-counter">Word Count: <span id="word-count"></span></p>
+      <p id="total-vowel-counter">Vowel Count: <span id="vowel-count"></span></p>
+      <p id="total-consonant-counter">Consonant Count: <span id="consonant-count"></span></p>
+    </div>
+    <div id="entry-zone">
+      <p id="entry-title"></p>
+      <p id="entry-body"></p>
+    </div>
+  </div>
 </body>
+
 </html>
 
 <!-- for textarea use html to define rows and css to define width. -->
